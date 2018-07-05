@@ -1,0 +1,16 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: configServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/test20180705/configServer
+          username: shenghe_game@163.com
+          password: shenghe2017
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
