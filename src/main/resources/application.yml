@@ -7,10 +7,12 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/test20180705/configServer
+          uri: https://github.com/XiaoMoSpringCloud/config
           username: shenghe_game@163.com
           password: shenghe2017
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8001/eureka/
+  instance:
+    hostname: configServer
